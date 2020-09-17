@@ -1,0 +1,32 @@
+@import '../shared.scss';
+
+.time-container {
+    background-image: linear-gradient(180deg,
+            $color-background-white 50%,
+            rgba($color-primary-light, 0.7) 50%,
+            rgba($color-secondary, 0.7) 100%);
+    background-size: 100% 250%;
+    background-position: 100% 0%;
+    border: 0.5rem solid $color-primary-light;
+    height: 80rem;
+    width: 120rem;
+    margin: 5vh auto;
+    text-align: center;
+    transition: all 0.8s;
+    border-radius: 10rem;
+
+    &__running {
+        background-image: linear-gradient(180deg,
+                $color-background-white 50%,
+                rgba($color-primary-light, 0.7) 50%,
+                rgba($color-secondary, 0.7) 100%);
+        background-size: 100% 250%;
+        background-position: 100% 100%;
+        transition: all 0.8s;
+        height: 80rem;
+        width: 120rem;
+        margin: 5vh auto;
+        text-align: center;
+        border-radius: 10rem;
+    }
+}

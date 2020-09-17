@@ -1,0 +1,74 @@
+@import '../shared.scss';
+$stroke-width : 0.5rem;
+
+.base-timer {
+    position: relative;
+    margin: auto;
+    width: 30rem;
+    height: 30rem;
+
+    &__circle {
+        fill: $color-background-white;
+        stroke: none;
+    }
+
+    &__path-elapsed {
+        stroke-width: $stroke-width;
+        stroke: grey;
+    }
+
+    &__path-remaining {
+        /* Just as thick as the original ring */
+        stroke-width: $stroke-width;
+
+        /* Rounds the line endings to create a seamless circle */
+        stroke-linecap: round;
+
+        /* Makes sure the animation starts at the top of the circle */
+        transform: rotate(90deg);
+        transform-origin: center;
+        backface-visibility: hidden;
+        /* One second aligns with the speed of the countdown timer */
+        transition: 1s linear all;
+        fill-rule: nonzero;
+
+        /* Allows the ring to change color when the color value updates */
+        stroke: grey;
+
+        &.start {
+            stroke: $color-primary-compliment;
+        }
+
+        &.middle {
+            stroke: $color-secondary;
+        }
+
+        &.end {
+            stroke: $color-red;
+        }
+    }
+
+    &__svg {
+        /* Flips the svg and makes the animation to move left-to-right */
+        transform: scaleX(-1);
+    }
+
+    &__label {
+        position: absolute;
+        color: $color-primary-light;
+        /* Size should match the parent container */
+        width: 30rem;
+        height: 30rem;
+
+        /* Keep the label aligned to the top */
+        top: 0;
+
+        /* Create a flexible box that centers content vertically and horizontally */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /* Sort of an arbitrary number; adjust to your liking */
+        font-size: 4.8rem;
+    }
+}
