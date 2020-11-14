@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/flow-timer/static/css/main.b17ab0dd.chunk.css",
+    "main.js": "/flow-timer/static/js/main.326c6bce.chunk.js",
+    "main.js.map": "/flow-timer/static/js/main.326c6bce.chunk.js.map",
+    "runtime-main.js": "/flow-timer/static/js/runtime-main.08728be4.js",
+    "runtime-main.js.map": "/flow-timer/static/js/runtime-main.08728be4.js.map",
+    "static/js/2.e2732009.chunk.js": "/flow-timer/static/js/2.e2732009.chunk.js",
+    "static/js/2.e2732009.chunk.js.map": "/flow-timer/static/js/2.e2732009.chunk.js.map",
+    "index.html": "/flow-timer/index.html",
+    "precache-manifest.e2b70076ee6284a422ebbff276415a58.js": "/flow-timer/precache-manifest.e2b70076ee6284a422ebbff276415a58.js",
+    "service-worker.js": "/flow-timer/service-worker.js",
+    "static/css/main.b17ab0dd.chunk.css.map": "/flow-timer/static/css/main.b17ab0dd.chunk.css.map",
+    "static/js/2.e2732009.chunk.js.LICENSE.txt": "/flow-timer/static/js/2.e2732009.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.08728be4.js",
+    "static/js/2.e2732009.chunk.js",
+    "static/css/main.b17ab0dd.chunk.css",
+    "static/js/main.326c6bce.chunk.js"
+  ]
+}
